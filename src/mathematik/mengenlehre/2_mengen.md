@@ -1,5 +1,5 @@
 # Mengenbildung und Mengenalgebra
-Bereits in der [Einführung zur Mengenlehre](mengenlehre.md#über-die-mengenlehre) wurde angemerkt, 
+Bereits in der [Einführung zur Mengenlehre](mengenlehre.md#Über-die-mengenlehre) wurde angemerkt, 
 dass die heute verwendete Mengenlehre nicht mehr die naive Mengenlehre nach Cantor ist,
 sondern eine axiomatisierte Mengenlehre, die man *Zermelo-Fraenkel-Mengenlehre* (kurz *ZF* oder auch *ZFC*)[^1] nennt, ist.
 Diese Mengenlehre "enthält" die naive Mengenlehre und merzt die gezeigten Widersprüche aus.
@@ -11,21 +11,19 @@ Es können auch Axiome vorkommen, die in anderen Axiomatisierungen der Mengenleh
 *Bertrand Russell* entwickelte die *Typentheorie*, nach der man die Mengenlehre auch stufenweise aufbauen kann.
 Hierbei gibt es eine kleinste Stufe, deren Elemente man *Urelemente* oder *Urmengen* nennt.
 
-:::note Stufenaufbau nach Russell
-
+```admonish note title="Stufenaufbau nach Russell"
 $$
     \begin{array}{c|c||c}
         \text{formale Benennung} & \text{häufige Benennung} & \\
         \hline\hline
-        X^0, Y^0, \dots & a, b, c, \dots & \text{Mengen 0. Stufe (Urelemente / Urmengen)}\\
+        X^0, Y^0, \dots & a, b, c, \dots & \text{Mengen 0. Stufe (Urelemente)}\\
         X^1, Y^1, \dots & A, B, C, \dots & \text{Mengen 1. Stufe}\\
         X^2, Y^2, \dots & \mathfrak{A}, \mathfrak{B}, \mathfrak{C}, \dots & \text{Mengen 2. Stufe}\\
         \vdots & & \vdots\\
         M^n & & \text{Menge n-ter Stufe}
     \end{array}
 $$
-
-:::
+```
 
 #### Beispiele
 Dabei sind die Elemente der jeweiligen Stufe stets Elemente der vorigen Stufe.
@@ -38,8 +36,7 @@ Mengensysteme spielen u.a. in der Maßtheorie eine wichtige Rolle, in der auch d
 
 Folgendes Axiom bildet eine Brücke zur Logik:
 
-:::tip Mengenbildungsaxiom
-
+```admonish note title="Mengenbildungsaxiom"
 Sei $H(M^n)$ Aussage über Mengen $n$-ter Stufe.
 $$
     \begin{equation*}
@@ -47,8 +44,8 @@ $$
     \end{equation*}
 $$
 wobei $M^{n+1}$ nicht in $H(M^n)$ vorkommt.
+```
 
-:::
 Das Mengenbildungsaxiom sagt aus, dass es eine Menge $M^{n+1}$ gibt, die aus den Elementen $M^n$ besteht, die eine gewisse Aussage erfüllen. 
 
 #### Beispiele
@@ -80,16 +77,14 @@ Weitere Beispiele sind:
 - Menge der ganzzahligen Lösungen einer Gleichung: $M = \{ x\ |\ x \in \mathbb{Z} \wedge x^2 + 2 = 4x - 1 \}$
 - Menge aller ganzen Quadratzahlen: $M = \{ x\ |\ \exists y \in \mathbb{Z}:\ x = y^2 \}$
 
-:::note Extensionalitätsaxiom (ZF) / Gleichheit von Mengen
-
+```admonish note title="Extensionalitätsaxiom (ZF) / Gleichheit von Mengen"
 Zwei Mengen sind gleich, wenn sie die gleichen Elemente besitzen:
 $$
     \begin{equation*}
         A = B\ :=\ \forall x:\ x \in A \leftrightarrow x \in B 
     \end{equation*}
 $$
-
-:::
+```
 
 ## Mengenalgebra
 Auf Mengen kann verschiedene Operationen durchführen.
@@ -111,18 +106,17 @@ Der in lila eingefärbte Bereich ist dann die neue Menge, die entsteht, wenn man
 Eine solche Darstellung nennt man *Venn-Diagramm*[^2].
 
 #### Durchschnitt
-Die Menge die entsteht, wenn man nur die Elemente aus zwei gegebenen Mengen nimmt, die sie gemeinsam haben nennt man *Durchschnitt*
+Die Menge die entsteht, wenn man nur die Elemente aus zwei gegebenen Mengen nimmt, die sie gemeinsam haben nennt, man *Durchschnitt*
 oder *Schnittmenge*.
 
-:::note Durchschnitt
-
+```admonish note title="Durchschnitt"
 $$
     A \cap B := \{ x\ |\ x \in A \wedge x \in B \}
 $$
 
 gesprochen: "A geschnitten B"
+```
 
-:::
 Zugehöriges Venn-Diagramm:
 
 ![Venn Diagramm zum Mengen-Durchschnitt](img/durchschnitt.png)
@@ -147,15 +141,14 @@ Die Menge die entsteht, wenn man die Elemente aus zwei gegebenen Mengen nimmt, u
 nennt man *Vereinigung* oder *Vereinigungsmenge*.
 Elemente, die in beiden vorkommen, werden dabei nur einmal gezählt.
 
-:::note Vereinigung
-
+```admonish note title="Vereinigung"
 $$
     A \cup B := \{ x\ |\ x \in A \vee x \in B \}
 $$
 
 gesprochen: "A vereinigt B"
+```
 
-:::
 Zugehöriges Venn-Diagramm:
 
 ![Venn Diagramm zum Mengen-Durchschnitt](img/vereinigung.png)
@@ -174,15 +167,14 @@ Die beiden Mengen $A$ und $B$ sind gleich - entsprechend auch deren Vereinigung.
 #### Komplement
 Das *Komplement* einer Menge besteht gerade aus den Elementen, die nicht in der Menge $A$ liegen, also alles andere außer die Menge $A$.
 
-:::note Komplement
-
+```admonish note title="Komplement"
 $$
     \overline{A} = A^\complement := \{ x\ |\ \neg (x \in A) \} = \{ x\ |\ x \notin A \}
 $$
 
 gesprochen: "Komplement von A"
+```
 
-:::
 Zugehöriges Venn-Diagramm:
 
 ![Venn Diagramm zum Mengen-Durchschnitt](img/komplement.png)
@@ -201,16 +193,15 @@ Dann ist $\overline{A} = \emptyset$.
 Wenn man zwei Mengen hat und man möchte eine Menge bilden, die nur die Elemente enthält, die in einer Menge vorkommen, 
 aber ohne die Elemente, die auch in der anderen liegen, dann ist das die *Differenzmenge* oder *Mengendifferenz*.
 
-:::note Differenz
-
+```admonish note title="Differenz"
 $$
     A \setminus B := \{ x\ |\ x \in A \wedge x \notin B \}
 
 $$
 
 gesprochen: "A ohne B"
+```
 
-:::
 Zugehöriges Venn-Diagramm:
 
 ![Venn Diagramm zum Mengen-Durchschnitt](img/differenz.png)
@@ -228,14 +219,13 @@ Dann ist $A \setminus B = \{ a, b, c \}$.
 Gegeben seien $M = \{ a, b, c, d \}$ und $A = \{ b, c \}$.
 Dann ist $M \setminus A = \{ a, d \} = \overline{A}$.
 
-Die Mengenoperationen wurden anhand Mengen 1. Stufe eingeführt, wie es die Symboliken erahnen lassen.
+Die Mengenoperationen wurden anhand Mengen 1. Stufe eingeführt, wie es die Symbolik erahnen lassen.
 Jedoch gelten diese auch für Mengen höherer Stufen.
 
 ### Rechenregeln für Mengenoperationen
 Für die Mengenoperationen gibt es gewisse Rechenregeln, die hier nun vorgestellt werden sollen.
 
-:::tip Rechenregeln für Mengenoperationen
-
+```admonish example title="Rechenregeln für Mengenoperationen"
 1. $$
    \begin{align*}
        \begin{aligned}
@@ -281,8 +271,7 @@ $$
       &&\text{Komplementgesetze}
    \end{align*}
 $$
-
-:::
+```
 
 Auch wenn einem manches davon vielleicht schon bekannt ist oder es als offensichtlich erscheint,
 so ist es keineswegs sicher, dass es im Allgemeinen gilt.
@@ -314,16 +303,15 @@ In den Beispielen beim [Komplement](#beispiele-5) tauchte folgender Satz auf:
 
 Dieses Wort "Teil" lässt sich wie folgt definieren:
 
-:::note Inklusion
-
+```admonish note title="Inklusion"
 Seien $M, A$ Mengen.
 - $A \subseteq M := \forall x:\ x \in A \rightarrow x \in M$
 - $A \subset M := A \subseteq M \wedge A \ne M$
 
 Für $A \subseteq M$ spricht man "$A$ ist *Teilmenge* von $M$" und
 für $A \subset M$ spricht man "$A$ ist *echte Teilmenge* von $M$"
+```
 
-:::
 Eine Teilmenge $A$ ist also mit ihren Elementen ganz und gar in ihrer *Obermenge* $M$ enthalten.
 Man bezeichnet diese Teilmengenbeziehung auch als *Inklusion*.
 
@@ -344,8 +332,7 @@ Strukturen sind dabei meist eine Menge mit zusätzlichen Dingen, wie Operationen
 Die formale Definition einer ($n$-stelligen) Operation erfolgt später.
 Hier sei nur gesagt, dass $\cap$ und $\cup$ *zweistellige Operationen* sind.
 
-:::note Verband
-
+```admonish note title="Verband"
 Seien $\mathfrak{M}$ Menge und $\cap, \cup$ zweistellige Operationen in $\mathfrak{M}$.
 
 Ein Tripel $(\mathfrak{M}, \cap, \cup)$ heißt
@@ -353,8 +340,7 @@ Ein Tripel $(\mathfrak{M}, \cap, \cup)$ heißt
 - *distributiver Verband*, falls Verband und zusätzlich Distributivität für alle $A, B, C \in \mathfrak{M}$ gelten.
 - *Boolesche Algebra*[^3], falls distributiver Verband und zusätzlich Komplementgesetze für alle $A, B, C \in \mathfrak{M}$ gelten.
   (auch *komplementärer, distributiver Verband*)
-
-:::
+```
 
 Die Mengenoperationen bilden eine boolesche Algebra, aber auch die logischen Ausdrücke in der Aussagenlogik können als eine aufgefasst werden.
 $\cap$ und $\cup$ stehen dort dann für $\wedge$ und $\vee$.
@@ -362,7 +348,7 @@ $\cap$ und $\cup$ stehen dort dann für $\wedge$ und $\vee$.
 Hier findet eine Abstraktion statt:
 Statt sich nur auf die oben eingeführten Mengenoperationen zu beschränken, wird in der Definition nur verlangt, 
 dass die genannten Rechenregeln gelten.
-Wie diese Operation aussieht ist egal.
+Wie diese Operation aussieht, ist egal.
 Es kann also auch eine völlig andere Operation gewählt werden, solange sie die Rechenregeln erfüllt ist es ein Verband.
 $\cap$ und $\cup$ stehen also lediglich für ein Symbol, das gegen ein anderes Symbol und entsprechender Bedeutung ausgetauscht werden kann.
 
@@ -370,14 +356,13 @@ $\cap$ und $\cup$ stehen also lediglich für ein Symbol, das gegen ein anderes S
 Eine wichtige Menge (mindestens) zweiter Stufe ist die *Potenzmenge*.
 Die *Menge aller Teilmengen*.
 
-:::note Potenzmenge
-
+```admonish note title="Potenzmenge"
 Sei $M$ Menge, dann heißt $2^M = \mathcal{P}(M) = \{ A\ |\ A \subseteq M \}$ *Potenzmenge* von $M$.
+```
 
-:::
 Die Bezeichnung $2^M$ kommt daher, da die Anzahl der Elemente in der Potenzmenge "2 hoch der Anzahl der Elemente in M" entspricht.
 Wenn also $M$ drei Elemente enthält, dann hat $\mathcal{P}(M)$ $2^3 = 8$ Elemente.
-Die Anzahl der Elemente einer Menge wird im Abschnitt [Endlichkeit und Kardinalzahlen](./endlichkeit) weiter thematisiert.
+Die Anzahl der Elemente einer Menge wird im Abschnitt [Endlichkeit und Kardinalzahlen](5_endlichkeit.md) weiter thematisiert.
 
 #### Beispiele
 Gegeben sei $M = \{ a, b, c \}$.
@@ -395,9 +380,12 @@ Man mache sich klar, dass $\emptyset \ne \{\emptyset\}$ ist.
 
 Die Potenzmenge mit den üblichen Mengenoperationen $\cap$ und $\cup$ ist eine boolesche Algebra.
 
-[^1]: Benannt nach *Ernst __Z__ermelo* und *Abraham __F__raenkel*.
+---
+[^1]: Benannt nach *Ernst **Z**ermelo* und *Abraham **F**raenkel*.
     Das *C* steht für *choice* und steht für das *Auswahlaxiom*.
     Je nachdem, ob man das Auswahlaxiom mit zu den Axiomen hinzunimmt kürzt man mit *ZF* oder eben *ZFC* ab.
-[^2]: Benannt nach *John __Venn__*.
-[^3]: Benannt nach *George __Boole__*. 
+
+[^2]: Benannt nach *John **Venn***.
+
+[^3]: Benannt nach *George **Boole***. 
     Einer der Begründer der mathematischen Logik

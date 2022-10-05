@@ -14,21 +14,17 @@ weshalb die strikte Trennung zwischen Syntax und Semantik nicht immer transparen
 ## Aussagenlogik (PL 0)
 Die *Aussagenlogik* oder auch *Prädikatenlogik 0. Stufe* (*PL0*) beschäftigt sich mit *Aussagen*.
 
-:::note Aussagen
-
+```admonish note title="Aussagen 1"
 *Aussagen* sind Sachverhalte in sprachlicher Form, die in der objektiven Realität vorliegen oder denkbar sind.
-
-:::
+```
 
 Diese Definition wirkt etwas sperrig.
 Eine andere Definition wäre:
 
-:::note Aussagen
-
+```admonish note title="Aussagen 2"
 Eine *Aussage* ist ein sprachliches Gebilde, dem eindeutig ein
 *Wahrheitswert* (*wahr* oder *falsch*) zugeordnet werden kann.
-
-:::
+```
 
 Diese Definition verknüpft allerdings schon ein bisschen die Syntax (sprachliches Gebilde) mit Semantik (Wahrheitswert).
 Sowohl die Syntax, als auch die Semantik werden nachfolgend gesondert eingeführt.
@@ -36,7 +32,7 @@ Nur wenden wir uns dann nicht mehr dem Begriff Aussage selbst zu, sondern nutzen
 
 #### Beispiele
 Folgendes sind Beispiele für Aussagen:
-- "Berlin ist die Hauptstadt von Deutschland"
+- "Berlin ist die Hauptstadt von Deutschland."
 - "Kein Auto ist Minzgrün"
 - $3 + 4 = 0$
 - $3 - 7 > -5$
@@ -51,8 +47,7 @@ Formale Sprachen werden im Teil [Informatik](../../informatik/informatik.md) nä
 ### Syntax
 Aussagenlogische *Formeln* beinhalten verschiedene Symbole und werden rekursiv definiert:
 
-:::note Aussagenlogische Formeln
-
+```admonish note title="Aussagenlogische Formeln"
 Sei $O = \{ \neg, \wedge, \vee, \rightarrow, \leftrightarrow, (, ) \}$ die Menge der *logischen Operatoren* (*Junktoren*)
 und $\Sigma$ eine Menge von Symbolen, die *Aussagevariablen* genannt werden.
 Neben den Aussagenvariablen existieren noch die "Grundaussagen-Symbole" $\{ w, f \}$.
@@ -62,22 +57,20 @@ Formeln sind nun rekursiv definiert:
 - $w$ und $f$ sind (atomare) Formeln
 - Alle Aussagenvariablen aus $\Sigma$ sind (atomare) Formeln
 - Sind $A$ und $B$ Formeln, dann sind auch $\neg A,\ (A),\ A \wedge B,\ A \vee B,\ A \rightarrow B,\ A \leftrightarrow B$ Formeln.
-
-:::
+```
 
 Das letzte ist der oben erwähnte rekursive Teil der Definition.
 Jede gültige Zusammensetzung der Symbole nach diesen Regeln ist wieder eine Formel.
 Es erscheinen also keine Junktoren, außer die Klammern, nebeneinander, sondern es liegen am Ende immer eine Aussagenvariable oder ein "Grundaussagen-Symbol" dazwischen.
 
-Durch das Ersetzen der Aussagenvariablen durch konkrete Aussagen, erhält man eine konkrete (zusammengesetzte) Aussage.
+Durch das Ersetzen der Aussagenvariablen durch konkrete Aussagen erhält man eine konkrete (zusammengesetzte) Aussage.
 Zusammengesetzte Aussagen nennt man auch *Aussagenverbindungen*, wenn man den zusammengesetzten Charakter hervorheben möchte,
 ansonsten sind es eben auch nur Aussagen oder Formeln.
 Es sind auch andere Symbole in Verwendung, je nach Person oder je nach Wissenschaft oder Fachgebiet.
 
 Die Junktoren haben einen Namen und eine Sprechweise:
 
-:::note Name und Sprechweise der Junktoren
-
+```admonish note title="Name und Sprechweise der Junktoren"
 $$
 \begin{align*}
     w &: \text{"wahr"}\\
@@ -89,8 +82,7 @@ $$
     A \leftrightarrow B &: \text{"A genau dann, wenn B" (Äquivalenz)}
 \end{align*}
 $$
-
-:::
+```
 
 Bisher war es nur Syntax, d.h. rein syntaktische Gebilde ohne Bedeutung.
 Einfach eine korrekte Aneinanderreihung von Symbolen.
@@ -99,15 +91,13 @@ Auch $w$ und $f$ sind erstmal nur Symbole, die allerdings wenig überraschend mi
 ### Semantik
 In der Aussagenlogik gilt das *Zweiwertigkeitsprinzip*:
 
-:::note Zweiwertigkeitsprinzip
-
+```admonish note title="Zweiwertigkeitsprinzip"
 Alle Aussagen sind entweder *wahr* ($w$ oder $1$) oder *falsch* ($f$ oder $0$)
 
 > Tertium non datur (dt.: Ein Drittes gibt es nicht)
 > 
 > — Satz vom ausgeschlossenem Dritten
-
-:::
+```
 
 Nehmen wir eine Formel $A \vee B$ und möchten diese untersuchen, ob sie wahr oder falsch ist, so können wir dies nicht ohne weiteres tun.
 Ersetzen wir die Aussagenvariablen $A$ und $B$ durch konkrete Aussagen, so können wir immerhin diesen Aussagen einen Wahrheitswert zuordnen.
@@ -115,8 +105,7 @@ Aber nach welchen Regeln soll das $\wedge$, also das *und*, behandelt werden?
 
 Dafür müssen wir diesen syntaktischen Symbolen nun eine Bedeutung mittels einer Wahrheitstabelle eine Semantik geben.
 
-:::note Semantik der Junktoren
-
+```admonish note title="Semantik der Junktoren"
 $$
 \begin{array}{c|c||c|c|c|c|c|c}
     A & B & \neg A & A \wedge B & A \vee B & A \rightarrow B & A \leftrightarrow B\\
@@ -127,8 +116,7 @@ $$
     w & w & f & w & w & w & w
 \end{array}
 $$
-
-:::
+```
 
 Um Klammern zu sparen, vereinbaren wir eine Priorität von Junktoren, ähnlich wie "Punkt vor Strich".
 Die Priorität der Junktoren in absteigender Reihenfolge: $\neg, \wedge, \vee, \rightarrow, \leftrightarrow$.
@@ -167,11 +155,9 @@ Die Implikation bereitet vielen am Anfang Bauchschmerzen, da sie dem umgangsspra
 Hierfür findet man im Web viele weitere Erklärungen und Beispiele, die vielleicht Abhilfe schaffen können.
 
 ### Klassifikation von Formeln
-:::note Modell
-
+```admonish note title="Modell"
 Jede Belegung, unter der die Formel wahr wird nennen wir ein *Modell* der Formel.
-
-:::
+```
 
 #### Beispiele
 $$
@@ -201,8 +187,7 @@ Solche Formeln haben einen bestimmten Namen, der in der nächsten Definition ein
 
 Wir können Formeln nun anhand ihrer Modelle in verschiedene Klassen einteilen:
 
-:::note Klassifikation von Formeln
-
+```admonish note title="Klassifikation von Formeln"
 Falls die Formel mindestens ein Modell hat, nennen wir sie *erfüllbar*.
 
 Eine Formel heißt *allgemeingültig*, falls jede Belegung ein Modell ist.
@@ -210,8 +195,7 @@ Solche Formeln nennt man auch *Tautologie*.
 
 Dagegen nennen wir sie *unerfüllbar*, wenn kein Modell existiert.
 Man nennt so eine Formel auch *Kontradiktion* oder *Widerspruch*.
-
-:::
+```
 
 #### Beispiele
 Oben haben wir bereits eine Tautologie gesehen. 
@@ -244,12 +228,10 @@ Wenn also bspw. jemand behauptet "Ich wohne in Berlin", er aber gleichzeitig sag
 Wenn wir über verschiedene Formeln reden und bestimmen wollen, ob diese Formeln das gleiche Aussagen, 
 dann ist das die Frage nach der *semantischen Äquivalenz*.
 
-:::note Semantische Äquivalenz
-
+```admonish note title="Semantische Äquivalenz"
 Zwei Formeln $F$ und $G$ heißen *semantisch äquivalent*, wenn sie die gleichen Modelle haben.
 Man schreibt $F \equiv P$.
-
-:::
+```
 
 #### Beispiel
 $$
@@ -269,17 +251,14 @@ schonmal mit der objektsprachlichen *syntaktischen Äquivalenz* verknüpft und d
 Es gibt einen wichtigen Zusammenhang zwischen der objektsprachlichen *syntaktischen Äquivalenz*
 und der metasprachlichen *semantischen Äquivalenz*:
 
-:::info Semantische und syntaktische Äquivalenz
-
+```admonish example title="Semantische und syntaktische Äquivalenz"
 Zwei Formeln $F$ und $P$ heißen *semantisch äquivalent*, genau dann, wenn $F \leftrightarrow P$ eine Tautologie ist.
-
-:::
+```
 
 Es gibt ein paar wichtige semantische Äquivalenzen, die uns auch beim *Rechnen* oder *Umformen* von Formeln helfen.
-Die tatsächliche semantische Äquivalenz lässt sich leicht durch aufstellen einer Wertetabelle ermitteln und ist eine gute Übung.
+Die tatsächliche semantische Äquivalenz lässt sich leicht durch Aufstellen einer Wertetabelle ermitteln und ist eine gute Übung.
 
-:::tip Wichtige semantische Äquivalenzen
-
+```admonish example title="Wichtige semantische Äquivalenzen"
 1. $$
 \begin{align*} 
     \begin{aligned} 
@@ -418,8 +397,7 @@ $$
     &&
 \end{align*}
 $$
-
-:::
+```
 
 #### Beispiele
 Im folgenden Beispiel wird eine Formel durch obige Äquivalenzen in eine äquivalente Formel umgeformt.
@@ -449,22 +427,18 @@ Es wird so umgeformt, dass sich der Wahrheitswert der Gleichung nicht ändert.
 ## Prädikatenlogik (PL 1)
 Die Aussagenlogik allein reicht leider nicht aus, um viele Problemstellungen in der Mathematik vernünftig zu formulieren.
 
-:::note Variable
-
+```admonish note title="Variable"
 Sei $G$ ein Grundbereich von Objekten.
 Für eine *Variable* $x$ über $G$ kann ein Objekt aus $G$ eingesetzt werden.
+```
 
-:::
-
-:::note Aussagenform
-
+```admonish note title="Aussagenform"
 Eine *Aussagenform* $H$ über $G$ ist ein schriftsprachliches Gebilde mit mindestens einer Variable.
 Durch Einsetzen von Objekten aus $G$ **für alle** Variablen wird $H$ zu einer Aussage.
-
-:::
+```
 
 Man schreibt $H(x)$ oder $H(x_1, x_2, \dots, x_n)$ für eine Aussagenform $H$ mit den Variablen $x$ bzw. $x_1, x_2, \dots, x_n$.
-Aussagenformen wurden bereits in der [Aussagenlogik](#syntax)) oben eingeführt, ohne sie konkret zu benennen:
+Aussagenformen wurden bereits in der [Aussagenlogik](#syntax) oben eingeführt, ohne sie konkret zu benennen:
 > Durch das Ersetzen der Aussagenvariablen durch konkrete Aussagen, erhält man eine \[$\dots$\] Aussage.
  
 Das Zusammensetzen von Aussagen(-formen) mit den entsprechenden Junktoren ist analog zur Aussagenlogik.
@@ -482,8 +456,7 @@ während $Mensch(Grumpy Cat)$, sprich "Grumpy Cat ist ein Mensch" eine falsche A
 
 Doch in der Prädikatenlogik gibt es noch mehr, was diese ausmacht:
 
-:::note Quantifizierung
-
+```admonish note title="Quantifizierung"
 Quantoren:
 - Allquantor: $\forall x$ - sprich: "Für alle $x$ aus $G$"
 - Existenzquantor: $\exists x$ - sprich: "Es existiert ein $x$ aus $G$"
@@ -494,8 +467,7 @@ Unter *Quantifizierung* einer Aussagenform $H(x)$ versteht man die Überführung
 
 Variablen, die durch einen Quantor quantifiziert sind, nennt man auch *gebunden*.
 Nicht gebundene Variablen heißen *frei*.
-
-:::
+```
 
 Eine Aussagenform wurde erst zu einer Aussage, wenn wir die Variablen durch ein konkretes Objekt aus $G$ ersetzt haben.
 Durch ein Quantor ist eine Aussagenform direkt eine Aussage:
@@ -503,13 +475,13 @@ Durch ein Quantor ist eine Aussagenform direkt eine Aussage:
 #### Beispiele
 Sei $G = \mathbb{N}$ Grundbereich und $H(x) := ``x + 1 = 3''$ Aussagenform.
 Durch Quantifizierung entstehen folgende Aussagen:
-- $\forall x (x + 1 = 3)$ - "Für alle $x$ aus $G$ gilt $x + 1 = 3" ist eine falsche Aussage.
-- $\exists x (x + 1 = 3)$ - "Es existiert ein $x$ aus $G$ mit $x + 1 = 3" ist eine wahre Aussage.
+- $\forall x (x + 1 = 3)$ -- "Für alle $x$ aus $G$ gilt $x + 1 = 3$" ist eine falsche Aussage.
+- $\exists x (x + 1 = 3)$ -- "Es existiert ein $x$ aus $G$ mit $x + 1 = 3$" ist eine wahre Aussage.
 
 Sei $G = \mathbb{N}$ und $H(x) := ``2x \ge x''$.
 Durch Quantifizierung entstehen folgende Aussagen:
-- $\forall x (2x \ge x)$ - "Für alle $x$ aus $G$ gilt $2x \ge x" ist eine wahre Aussage.
-- $\exists x (2x \ge x)$ - "Es existiert ein $x$ aus $G$ mit $2x \ge x" ist eine wahre Aussage.
+- $\forall x (2x \ge x)$ -- "Für alle $x$ aus $G$ gilt $2x \ge x$" ist eine wahre Aussage.
+- $\exists x (2x \ge x)$ -- "Es existiert ein $x$ aus $G$ mit $2x \ge x$" ist eine wahre Aussage.
 
 Man beachte hierbei, dass es bei einer Existenzaussage heißt "Es existiert **mindestens** ein $x\ \dots$".
 Im Beispiel sieht man, dass mehrere $x$ die letzte Aussage erfüllen.
@@ -519,7 +491,7 @@ Damit wäre $\exists ! x (2x \ge x)$ eine falsche Aussage, da jedes $x$ das oben
 Sei $G = \mathbb{Z}$ und $H(x) := ``2x \ge x''$.
 $\forall x (2x \ge x)$ ist nun eine falsche Aussage, da sich der Grundbereich geändert hat.
 Dagegen ist $\forall x (x \in \mathbb{N} \rightarrow 2x \ge x)$ wieder wahr.
-Statt dieser Schreibweise findet man häufig folgende unexakte Schreibweisen für solche Aussagen:
+Statt dieser Schreibweise findet man häufig folgende inexakte Schreibweisen für solche Aussagen:
 $$
 \begin{equation*}
     \forall x \in \mathbb{N}:\ 2x \ge x

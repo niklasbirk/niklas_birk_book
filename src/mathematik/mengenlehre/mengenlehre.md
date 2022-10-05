@@ -30,12 +30,10 @@ Die heutige Mathematik beruht auf einer axiomatisierten Mengenlehre und wird auc
 Doch ist die naive Mengenlehre ein Teil der ZF-Mengenlehre und daher nach wie vor ein einfacher und guter Zugang.
 
 ## Naive Mengenlehre nach Cantor
-:::note Menge
-
+```admonish note title="Menge"
 Unter einer *Menge* verstehen wir jede Zusammenfassung $M$ von bestimmten wohlunterschiedenen Objekten $m$ 
 unserer Anschauung oder unseres Denkens zu einem Ganzen.
-
-:::
+```
 
 Mengen werden dabei mit den *Mengenklammern* $\{$ und $\}$ aufgeschrieben. 
 Außerdem wird das Symbol $\in$ dafür verwendet um zu beschreiben, dass ein *Element* $m$ zu einer Menge $M$ gehört: $m \in M$.
@@ -45,14 +43,14 @@ Dagegen wird $\notin$ dafür verwendet, um zu beschreiben, dass ein Element $n$ 
 #### Ziffern 0 bis 5
 Die Menge der Ziffern *0* bis *5*:
 $$
-Z = \{ 0, 1, 2, 3, 4, 5 \}
+   Z = \{ 0, 1, 2, 3, 4, 5 \}
 $$
 Dabei gilt z.B. $1 \in Z$ und $4 \in Z$, aber nicht $8 \in Z$, also $8 \notin Z$.
 
 #### Ballarten
 Folgendes könnte eine Menge von verschiedenen, aber nicht allen Ballarten sein:
 $$
-B = \{ \text{Fußball}, \text{Tennisball}, \text{Baseball} \}
+   B = \{ \text{Fußball}, \text{Tennisball}, \text{Baseball} \}
 $$
 Es gilt z.B. $\text{Fußball} \in B$ und $\text{Basketball} \notin B$.
 
@@ -60,25 +58,21 @@ Es gilt z.B. $\text{Fußball} \in B$ und $\text{Basketball} \notin B$.
 Diese *naive* Auffassung von Menge birgt allerdings Widersprüche, auch *Antinomien* genannt.
 
 #### Russell'sche Menge
-:::note Russell'schen Menge
-
+```admonish note title="Russell'schen Menge"
 Menge aller Mengen, die sich nicht selbst als Element enthalten.
-
-:::
+```
 
 Sei die (russell'sche) Menge $X$ dadurch definiert, dass für alle Mengen $A$ gilt:
-$$$
-A \in X \text{ genau dann, wenn } A \notin A
-$$$
+$$
+   A \in X \text{ genau dann, wenn } A \notin A
+$$
 
-:::danger Aber gilt nun $X \in X$?
-
+```admonish danger title="Enthält dich die Menfe selbst?"
 Für $A := X$ erhält man den Widerspruch
 $$
-X \in X \text{ genau dann, wenn } X \notin X
+   X \in X \text{ genau dann, wenn } X \notin X
 $$
-
-:::
+```
 
 Das funktioniert eben nicht: Wenn die Menge $X$ in $X$ selbst als Element liegt, dann darf sie aber nicht in $X$ liegen, 
 da wir die Menge $X$ ja gerade so definiert haben, dass sie nur die Mengen enthält, die sich nicht selbst enthalten.
@@ -87,29 +81,26 @@ Andersherum heißt es, dass wenn $X$ nicht in $X$ ist, dann müsste sie in $X$ l
 #### Barbier von Sevilla
 Ein anderes Beispiel ist die Anekdote vom *Barbier von Sevilla*, die ebenfalls von Russell stammt.
 
-:::note Barbier von Sevilla
-
+```admonish note title="Barbier von Sevilla"
 Der Barbier $B$ ist derjenige Mann von Sevilla, der genau die Männer $M$ von Sevilla rasiert, die sich nicht selbst rasieren.
-
-:::
+```
 
 Wir sagen nun, dass der Barbier $B$ sei. 
 Der Barbier ist aber an sich keine Menge.
 Die Anekdote kann man auch so formulieren, dass wir wieder nur "richtige" Mengen haben.
 Für jetzt bezeichnen wir aber einfach die symbolische Schreibweise $M \in B$ als "*$M$ wird vom Barbier $B$ rasiert*".
 Damit erhalten wir folgende Beziehung:
-$$$
-M \in B \text{ genau dann, wenn } M \notin M
-$$$
+$$
+   M \in B \text{ genau dann, wenn } M \notin M
+$$
 
-:::danger Rasiert der Barbier sich selbst?
-
+```admonish danger title="Rasiert der Barbier sich selbst?"
 Für $M := B$ erhält man den Widerspruch
 $$
-B \in B \text{ genau dann, wenn } B \notin B
+   B \in B \text{ genau dann, wenn } B \notin B
 $$
+```
 
-:::
 Also wenn der Barbier sich selbst rasiert, dann dürfte er sich ja nicht selbst rasieren, da er ja nur die rasiert, 
 die sich nicht selbst rasieren.
 Aber wenn der Barbier sich nicht selbst rasiert, dann müsste er sich ja entsprechend der Definition selbst rasieren.

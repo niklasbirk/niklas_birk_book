@@ -32,7 +32,7 @@ Jedoch hat sie sich weiterentwickelt zu etwas, das mit bloßem Rechnen nicht meh
 Auch die Geometrie hat sich zu etwas entwickelt, was wir uns so gar nicht mehr vorstellen können.
 Das *übliche* Rechnen und die *übliche* Geometrie sind allerdings allesamt Spezialfälle der heutigen Auffassungen
 und eignen sich daher gut dafür sich die Dinge vorzustellen. 
-Auch deshalb beschränkt man sich häufig auf diese, wenn man einer Person Mathematik nahe bringen möchte.
+Deshalb beschränkt man sich häufig auf diese, wenn man einer Person Mathematik nahe bringen möchte.
 Auch spielt das Rechnen in unserem Alltag an der Supermarktkasse oder beim Zählen eine große Rolle.
 
 Mathematik zählt wie die [Informatik](../informatik/informatik.md) zu den *Struktur*- bzw. *Formalwissenschaften*.
@@ -46,13 +46,11 @@ auch falsifiziert werden können. Solche Erkenntnisse sind daher vorläufig, das
 Eine gemeinhin anerkannte Definition existiert nicht, aber ein grober Versuch zu beschreiben, 
 was die Mathematik ist oder macht könnte folgendermaßen aussehen: 
 
-:::note Mathematik
-
+```admonish note title="Mathematik"
 Die Mathematik ist eine Wissenschaft, 
 die durch logische Definitionen selbstgeschaffene abstrakte Strukturen mittels der Logik
 auf ihre Eigenschaften und Muster untersucht.[^2]
-
-:::
+```
 
 ## Einteilung der Mathematik
 ### Reine Mathematik
@@ -91,12 +89,10 @@ Vier davon sind besonders hervorzuheben, da sie für viele andere Teilgebiete di
 Die Logik ist nicht nur fundamental in der Mathematik. 
 Auch in der Philosophie und Informatik spielt sie eine entscheidende Rolle.
 
-:::note Logik
-
+```admonish note title="Logik"
 Logik ist die Wissenschaft des *richtigen Schließens*.
 In der Mathematik werden die Zusammenhänge zwischen Axiomen und Sätzen von mathematischen Theorien untersucht.
-
-:::
+```
 
 Die Logik bildet das formale Grundgerüst, auf das die Mathematik heute beruht.
 Mathematische *Sätze* sind logische Aussagen und das Zeigen der Gültigkeit eines solchen Satzes wird
@@ -113,12 +109,10 @@ Die Mengenlehre untersucht Mengen, also eine Zusammenfassung von Objekten.
 Mengenoperationen können direkt auf die Logik zurückgeführt werden.
 Außerdem werden nahezu alle mathematischen Objekte als Mengen definiert, weshalb Mengen (und Logik) **die** Grundlage der Mathematik ist.
 
-:::note Mengenlehre
-
+```admonish note title="Mengenlehre"
 Die Mengenlehre befasst sich mit der Untersuchung von einer Zusammenfassung von wohlunterschiedenen Objekten unserer
 Anschauung oder unseres Denkens zu einem Ganzen (Menge).
-
-:::
+```
 
 In u.a. folgende Untersuchungs- und Teilgebiete lässt sich die (mathematische) Logik einordnen:
 - Aussagen- und Prädikatenlogik
@@ -134,11 +128,9 @@ In u.a. folgende Untersuchungs- und Teilgebiete lässt sich die (mathematische) 
 Die Algebra wird in der Schule häufig als das "Rechnen mit Unbekannten" und "Lösen von Gleichungen" eingeführt.
 Die Theorie der Algebra hat sich allerdings weiterentwickelt und abstrahiert.
 
-:::note Algebra
-
+```admonish note title="Algebra"
 Algebra untersucht die Verbindungen zwischen algebraischen Strukturen.
-
-:::
+```
 
 Folgende Untersuchungs- und Teilgebiete können u.a. der Algebra zugeordnet werden:
 - Arithmetik (zusammen mit der [Zahlentheorie](#zahlentheorie))
@@ -156,31 +148,27 @@ Folgende Untersuchungs- und Teilgebiete können u.a. der Algebra zugeordnet werd
 Die Analysis ist v.a. für Natur- und Ingenieurwissenschaften relevant.
 Sie beschäftigt sich hauptsächlich mit Funktionen in den *reellen* und *komplexen Zahlen*.
 
-:::note Analysis
-
+```admonish note title="Analysis"
 Die Analysis befasst sich mit Funktionen und ihren analytischen Eigenschaften, 
 wie Stetigkeit, Differenzierbarkeit und Integrierbarkeit.
-
-:::
+```
 
 Folgende Untersuchungs- und Teilgebiete können u.a. der Analysis zugeordnet werden:
 - Folgen, Reihen und Grenzwerte
 - Reelle Analysis
   - Stetigkeit
-  - Differentialrechnung
+  - Differenzialrechnung
   - Integralrechnung
 - Funktionentheorie (komplexe Analysis)
 - Funktionalanalysis (Kombination aus Algebra und Analysis)
-- Differentialgleichungen
+- Differenzialgleichungen
 
 #### Topologie
 Die Topologie beschäftigt sich mit mathematischen Strukturen, deren Struktur unter stetigen Verformungen erhalten bleiben.
 
-:::note Topologie
-
+```admonish note title="Topologie"
 Die Topologie ist die Lehre von der Lage und Anordnung geometrischer Gebilde im Raum.[^3]
-
-:::
+```
 
 Der Stetigkeitsbegriff aus der Analysis wird dadurch verallgemeinert. 
 Ebenso Begriffe wie Grenzwerte.
@@ -193,11 +181,9 @@ Ein Spezialfall eines topologischen Raumes ist der *metrische Raum*, welcher auc
 Die diskrete Mathematik beschäftigt sich mit diskreten Strukturen, während die Analysis bspw. als *kontinuierlich* beschrieben werden kann.
 Sie spielt v.a. in der Informatik eine wichtige Rolle.
 
-:::note Diskrete Mathematik
-
+```admonish note title="Diskrete Mathematik"
 Die diskrete Mathematik beschäftigt sich mit Operationen auf höchstens abzählbar unendlichen Mengen.
-
-:::
+```
 
 Als Untersuchungs- und Teilgebiete der diskreten Mathematik können folgende aufgezählt werden:
 - Codierungstheorie
@@ -209,13 +195,11 @@ Als Untersuchungs- und Teilgebiete der diskreten Mathematik können folgende auf
 #### Numerik
 Durch die Erkenntnisse der Numerik lassen sich näherungsweise Lösungen durch Computer berechnen.
 
-:::note Numerische Mathematik
-
+```admonish note title="Numerische Mathematik"
 Die numerische Mathematik beschäftigt sich mit der Konstruktion und Analyse von Algorithmen für kontinuierliche mathematische Probleme.[^4]
+```
 
-:::
-
-An der Definition erkennbar, sind numerische Algorithmen nicht nur für Computer gedacht.
+An der Definition erkennbar sind numerische Algorithmen nicht nur für Computer gedacht.
 Wenn ein gegebenes Problem mathematisch zu berechnen sehr aufwändig ist und man nur Näherungswerte benötigt,
 dann kann es wert sein, eine numerische Lösung dafür zu finden, die erheblich einfacher ist, 
 ganz unabhängig von Computern (z.B. Überschlagen einer Rechnung im Kopf).
@@ -227,22 +211,18 @@ Da wir die Mathematik gerne als Beschreibungssprache theoretischer Zusammenhäng
 kam der Wunsch nach einer mathematischen Theorie für Zufall auf.
 Glücklicherweise ging das auf und die Wahrscheinlichkeitstheorie ward geboren.
 
-:::note Stochastik
-
+```admonish note title="Stochastik"
 Die Stochastik untersucht mathematische Methoden für 
 Versuche, Beobachtungen, Situationen, etc., bei denen man Ergebnisse nicht genau (vorher-)bestimmen kann
-
-:::
+```
 
 Unter Stochastik fallen die beiden Zweige *Wahrscheinlichkeitstheorie* und *mathematische Statistik*.
 Es gibt neben der *mathematischen Statistik* allerdings noch weitere Arten von Statistiken.
 
-:::note Statistik
-
+```admonish note title="Statistik"
 Statistik ist die Lehre von Methoden zum Umgang mit quantitativen Informationen.
 Sie ist eine Möglichkeit, eine systematische Verbindung zwischen Erfahrung (Empirie) und Theorie herzustellen.[^5]
-
-:::
+```
 
 Viele empirische Wissenschaften nutzen die Statistik als theoretische Grundlage, 
 da mit den Hilfsmitteln der Statistik ihre empirisch gesammelten Informationen analysiert werden können.
@@ -263,15 +243,13 @@ Geometrie handelte früher von Punkten und Geraden und Figuren, die man damit er
 Ganz anschaulich konnte man damit Figuren zeichnen und konstruieren.
 Mittlerweile hat sich die Geometrie zu etwas weiterentwickelt, von dem man gar nicht mehr annehmen würde, dass es Geometrie ist.
 
-:::note Geometrie
-
+```admonish note title="Geometrie"
 Geometrie beschäftigt sich mit der allgemeinen Untersuchung invarianter (unveränderlicher) Größen.
 
 > Geometrie ist die Invariantentheorie von Transformationsgruppen.
 >
 > --- Felix Klein (Erlanger-Programm)
-
-:::
+```
 
 Folgende Untersuchungs- und Teilgebiete der Geometrie können genannt werden:
 - Geometrische Figuren
@@ -280,20 +258,18 @@ Folgende Untersuchungs- und Teilgebiete der Geometrie können genannt werden:
   - Affine Geometrie
   - Euklidische Geometrie (Elementargeometrie aus der Schule)
 - Analytische Geometrie (anderer Zugang zu synthetischen Geometrien, v.a. Elementargeometrie)
-- Nichteuklidische Geometrie
-- Differentialgeometrie
+- Nicht-euklidische Geometrie
+- Differenzialgeometrie
 
 #### Zahlentheorie 
 Die Zahlentheorie beschäftigt sich hauptsächlich mit Zahlen.
-In der *elementaren Zahlentheorie* insbesondere mit den *ganzen Zahlen*.
-Begriffe wie Teilbarkeit kommen aus diesem Teilgebiet, genauer gesagt aus der Arithmetik..
-Zahlentheoretische Erkenntnisse werden insbesondere in der Codierungstheorie und Kryptographie benötigt.
+In der *elementaren Zahlentheorie* vor allem mit den *ganzen Zahlen*.
+Begriffe wie Teilbarkeit kommen aus diesem Teilgebiet, genauer gesagt aus der Arithmetik.
+Zahlentheoretische Erkenntnisse werden insbesondere in der Codierungstheorie und Kryptografie benötigt.
 
-:::note Zahlentheorie
-
+```admonish note title="Zahlentheorie"
 Die Zahlentheorie beschäftigt sich mit den Eigenschaften von Zahlen und Zahlbereichen.[^6]
-
-:::
+```
 
 Bei der [Algebra](#algebra) wurde bereits die Arithmetik erwähnt. 
 Die Arithmetik ist das Rechnen mit den *Grundrechenarten* in den *natürlichen Zahlen*. 
@@ -310,9 +286,15 @@ Folgende Untersuchungs- und Teilgebiete der Zahlentheorie können genannt werden
 - Algebraische Zahlentheorie
 - Algorithmische Zahlentheorie
 
+---
 [^1]: <https://www.mathematik.de/Vermischtes/65-studie-mathematik-ist-das-lieblingsfach-der-deutschen>  
+
 [^2]: <https://de.wikipedia.org/wiki/Mathematik>  
-[^3]: <https://de.wikipedia.org/wiki/Topologie_(Mathematik)>   
+
+[^3]: <https://de.wikipedia.org/wiki/Topologie_(Mathematik)>  
+
 [^4]: <https://de.wikipedia.org/wiki/Numerische_Mathematik>  
+
 [^5]: <https://de.wikipedia.org/wiki/Statistik>  
+
 [^6]: <https://de.wikipedia.org/wiki/Zahlentheorie>

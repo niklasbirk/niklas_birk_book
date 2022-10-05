@@ -5,14 +5,13 @@ Manchmal benötigt man jedoch so etwas wie eine Reihenfolge oder
 möchte Mengen miteinander in eine gewisse Verbindung bringen, ohne sie einfach nur zu Vereinigen.
 
 ## Kartesisches Produkt
-:::note Geordnete Paare
-
+```admonish note title="Geordnete Paare"
 Ein *geordnetes Paar* (*2-Tupel*) mit den Elementen $a$ und $b$ ist wie folgt als Menge definiert:
 $$
     (a, b)\ :=\ \{ \overbrace{\{a, b\}}^{\text{Elemente des Tupels}}, \underbrace{\{a\}}_{\text{Erstes Element}} \}
 $$ 
+```
 
-:::
 Ein 2-Tupel fasst also je zwei Elemente zusammen und bestimmt dabei, welches zuerst kommt.
 Anders als bei Mengen, bei denen $\{a,b\} = \{b,a\}$ gilt, gilt bei 2-Tupeln demnach $(a,b) \ne (b,a)$.
 Die andere Schreibweise $()$, statt $\{\}$, soll dies verdeutlichen und dazu führen, dass man diese nicht verwechselt.
@@ -21,16 +20,15 @@ Ein Verband haben wir als ein *Tripel* eingeführt.
 Ein Tripel ist ein 3-Tupel.
 Allgemein lassen sich rekursiv n-Tupel wie folgt definieren:
 
-:::note n-Tupel
-
+```admonish note title="n-Tupel"
 - 1-Tupel: $(x_1) = \{ x_1 \}$
 - 2-Tupel: $(x_1, x_2) = \{ \{x_1, x_2\}, \{x_1\} \}$
 - 3-Tupel: $(x_1, x_2, x_3) = ((x_1, x_2), x_3)$
 - n-Tupel: $(x_1, x_2, \dots, x_n) = ((x_1, x_2, \dots, x_{n-1}), x_n)$
+```
 
-:::
 n-Tupel lassen sich also auf die Mengendarstellungen der 2-Tupel zurückführen.
-In der Typentheorie nach Russell, die im Kapitel über [Mengen](../2_mengen.md) eingeführt wurde ist dies allerdings nicht erlaubt.
+In der Typentheorie nach Russell, die im Kapitel über [Mengen](../2_mengen.md) eingeführt wurde, ist dies allerdings nicht erlaubt.
 Denn schon bei einem 3-Tupel gibt es eine Vermischung verschiedener Mengenstufen:
 $$
     \begin{align*}
@@ -48,8 +46,7 @@ Wir wollen es an dieser Stelle allerdings dabei belassen und nehmen es einfach h
 Man kann nun Tupel zu einer Menge zusammenfassen.
 Die Menge aller Tupel von Mengen nennt man *kartesisches Produkt*:
 
-:::note Kartesisches Produkt
-
+```admonish note title="Kartesisches Produkt"
 Seien $A$ und $B$ Mengen, dann ist das *kartesische Produkt* der Mengen $A$ und $B$ definiert als
 $$
     A \times B\ :=\ \{ (a,b)\ |\ a \in A \wedge b \in B \}
@@ -61,19 +58,16 @@ Mit
 - $A^{n+1} := A^n \times A$ 
 
 erhalten wir die *n-fache kartesische Potenz*.
-
-:::
+```
 
 ## Relationen
 Das kartesische Produkt erlaubt es uns jetzt Paare in einer Menge zusammenzufassen.
 Daraus können wir nun eine Teilmenge betrachten.
 
-:::note Relation
-
+```admonish note title="Relation"
 Seien $A$, $B$ Mengen.
 Man nennt $R$ *Relation* oder *Korrespondenz* __aus__ $A$ __in__ $B$ $:=\ R \subseteq A \times B$
-
-:::
+```
 
 #### Beispiele
 Nehmen wir eine Menge mit drei Elementen $A = \{a_1, a_2, a_3\}$ und bilden alle möglichen Paare.
@@ -97,7 +91,7 @@ Man kann auch veranschaulichen, wie die jeweiligen Elemente in Beziehung stehen:
 
 ![Relation R veranschaulicht durch Pfeile](img/relation.png)
 
-Einige Begriffe die jetzt noch kommen sind vielleicht schon aus der Schulmathematik bekannt.
+Einige Begriffe, die jetzt noch kommen, sind vielleicht schon aus der Schulmathematik bekannt.
 Dort hat man sie allerdings für *Funktionen* kennengelernt.
 Da Funktionen spezielle Relationen sind, ist das nicht weiter schlimm.
 Dennoch sollte man darauf achten, ob man gerade mit einer echten Funktion oder nur einer Relation hantiert, 
@@ -107,8 +101,7 @@ Funktionen werden aber sehr bald schon eingeführt.
 ### Definitions- und Wertebereich
 Es ist sinnvoll Mengen zu definieren, die nur die Elemente ersten oder die zweiten Elemente einer Relation erfasst:
 
-:::note Definitions- und Wertebereich
-
+```admonish note title="Definitions- und Wertebereich"
 - *Definitionsbereich* von $R$: 
    $$
       D(R)\ :=\ \{ x\ |\ x \in A \wedge \exists y \in B:\ (x,y) \in R \}
@@ -119,8 +112,7 @@ Es ist sinnvoll Mengen zu definieren, die nur die Elemente ersten oder die zweit
       W(R)\ :=\ \{ y\ |\ y \in B \wedge \exists x \in A:\ (x,y) \in R \}
    $$
    Der Wertebereich oder das Bild von $R$ umfasst also alle Elemente $y$ aus $B$, für die es ein $x$ aus $A$ gibt.
-
-:::
+```
 
 #### Beispiele
 Gegeben sei $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $R = \{(1,a), (1,d), (2,b), (3,b), (4,d)\} \subseteq A \times B$.
@@ -150,26 +142,22 @@ Dann sind:
 
 Je nachdem, ob der Definitions- oder Wertebereich die gesamte Menge $A$ bzw. $B$ umfasst gibt es verschiedene Sprechweisen.
 
-:::note Sprechweisen
-
+```admonish note title="Sprechweisen"
 $R$ ist Relation
 - "*__von__* $A$ *in* $B$" $:=\ D(R) = A$
 - "*aus* $A$ *__auf__* $B$" $:=\ W(R) = B$
 - "*__von__* $A$ *__auf__* $B$" $:=\ D(R) = A \wedge W(R) = B$
-
-:::
+```
 
 Wenn nun eine Relation gegeben ist, dann möchte man vielleicht die Frage stellen "Welche $y$-Werte werden für ein $x$ angenommen?"
 und möchte dies formal ausdrücken bzw. aufschreiben, ohne dabei immer die Tupel angeben zu müssen.
 
-:::note Schreibweise 1
-
+```admonish note title="Schreibweise 1"
 Sei $R$ Relation.
 $$
    R(x)\ :=\ \{ y\ |\ y \in B \wedge (x,y) \in R \}
 $$
-
-:::
+```
 
 #### Beispiele
 Gegeben sei $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $R = \{(1,a), (1,d), (2,b), (3,b), (4,d)\} \subseteq A \times B$.
@@ -191,14 +179,12 @@ Man erkennt an diesem Beispiel schon einen gewissen Aufbau: "$x$ ist verwandt mi
 Häufig schreibt man in so einem Fall also nicht $(x,y) \in R$ oder $R(x) = \{y, (\dots)\}$, sondern zieht die
 Relationsbezeichnung in die Mitte:
 
-:::note Schreibweise 2
-
+```admonish note title="Schreibweise 2"
 Sei $R$ Relation.
 $$
     x R y\ :=\ (x,y) \in R
 $$
-
-:::
+```
 
 #### Beispiele
 Sei $R$ jeweils die Relation in den Stichpunkten.
@@ -216,16 +202,14 @@ Aber an dieser Stelle sind es nur symbolische Beispiele, wieso es sinnvoll ist, 
 ### Verkettung und Inverse
 Man kann auch zwei Relationen kombinieren, sofern diese *in* und *aus* den gleichen Mengen korrespondieren - in dieser Reihenfolge.
 
-:::note Verkettung / Relationenprodukt
-
+```admonish note title="Verkettung / Relationenprodukt"
 Seien $R \subseteq A \times B$ und $K \subseteq B \times C$ Relationen.
 Dann ist die Verkettung von $R$ mit $K$ definiert als:
 $$
    F \circ K\ :=\ \{ (x,z)\ |\ \exists y \in B:\ (x,y) \in R \wedge (y,z) \in K \}
 $$
 Also ist $F \circ K \subseteq A \times C$.
-
-:::
+```
 
 #### Beispiele
 Gegeben seien $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $C = \{\alpha, \beta, \gamma\}$.
@@ -250,15 +234,13 @@ Relationen kann man auch umkehren.
 Die Rolle der ersten Elemente eines Tupels vertauscht sich dann mit den zweiten Elementen.
 Das heißt, Wenn $x$ mit $y$ in Relation steht, also $(x,y) \in R$, dann ist das *Inverse* dazu $(y,x) \in R^{-1}$.
 
-:::note Inverse Relation
-
+```admonish note title="Inverse Relation"
 Gegeben sei $R \subseteq A \times B$
 $$
     R^{-1}\ :=\ \{(y,x)\ |\ (x,y) \in R \} \subset B \times A
 $$
 ist die *inverse Relation* zu $R$.
-
-:::
+```
 Man beachte, dass sich entsprechend das kartesische Produkt umdreht.
 Also wenn $R \subseteq A \times B$, dann ist $R^{-1} \subseteq B \times A$.
 
@@ -273,13 +255,13 @@ Veranschaulicht:
 ![Relation R und Inverse von R veranschaulicht durch Pfeile](img/inverse_rel.png)
 
 Für die Verkettung und das Inverse gelten nun folgende Eigenschaften:
-:::tip Sätze über Verkettung und Inverse von Relationen
 
+```admonish example title="Sätze über Verkettung und Inverse von Relationen"
 1. Die Verkettung ist assoziativ: $(R \circ K) \circ F = R \circ (K \circ F )$
 2. $(R^{-1})^{-1} = R$
 3. $(R \circ K)^{-1} = K^{-1} \circ R^{-1}$
+```
 
-:::
 Die Assoziativität ist leicht zu beweisen.
 Man geht auf die Definitionsebene mit Mengen und definierenden Ausdrücken und führt es auf die Assoziativität der logischen Operatoren zurück,
 sowie es bereits bei der [Schnittmenge der Mengenalgebra](../2_mengen#beweis) gemacht wurde.
@@ -307,7 +289,7 @@ Statt $\longleftrightarrow$, wurde hier $\Longleftrightarrow$ genutzt.
 Beweise in der Mathematik sind eher Skizzen und kein formaler Beweis, wie man ihn in der Logik korrekt führen müsste
 und manchmal verschwimmen dabei auch die Objekt- und Metasprache.
 
-Jeder Schritt der hier gemacht wurde, ist äquivalent.
+Jeder Schritt, der hier gemacht wurde, ist äquivalent.
 Bei Beweisen, bei denen man die Äquivalenz von zwei Aussagen $A$ und $B$ zeigen soll, 
 unterteilt man diese in die Richtungen "$A \Rightarrow B$" und "$B \Rightarrow A$".
 In Fällen, wie hier, bei denen man direkt die Äquivalenz "$\Leftrightarrow$" nutzen kann fällt die direkte Unterteilung weg -

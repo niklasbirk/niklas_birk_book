@@ -16,13 +16,11 @@ Das ist nicht ganz falsch, aber bei weitem auch nicht ganz richtig.
 ### Ein Versuch einer Definition
 Im Folgenden möchte ich ein paar verschiedene Definitionen aufzeigen, die allesamt ähnlich sind.
 
-:::note Informatik
-
+```admonish note title="Informatik"
 - Informatik beschäftigt sich mit der automatischen Informationsverarbeitung in Natur, Technik und Gesellschaft.
 - Informatik ist die Wissenschaft der systematischen Verarbeitung von Informationen, besonders der automatischen Verarbeitung mithilfe von Computern.
 - Wissenschaft von automatisierter Verarbeitung von (Daten und) Informationen
-
-:::
+```
 
 In diesen Definitionen verstecken sich nun ein paar wichtige Worte, wie der Begriff der **Information**.
 Eine Einführung dieses Begriffs erfolgt allerdings an anderer Stelle.
@@ -56,8 +54,7 @@ Außerdem hört man häufig, dass Menschen die **IT** mit **Informatik** gleichs
 Die Informatik als Wissenschaft streift verschiedenste Themengebiete und andere Wissenschaften, die **Informationstechnik**
 (IT) ist nur eine davon, wenngleich keine unwichtige!
 
-:::caution Informationstechnik und Kommunikationstechnik
-
+```admonish bug title="Informationstechnik und Kommunikationstechnik"
 Die Informationstechnik steht für die Technik zur elektronischen Datenverarbeitung und die verwendete Hard- und Software-Infrastruktur.
 
 Es handelt sich dabei also gar nicht um eine Wissenschaft, sondern ist ein Überbegriff für die Technik, die verwendet wird.
@@ -65,8 +62,7 @@ Die Informatik ist aber eine Wissenschaft die sich damit beschäftigt, die Techn
 
 Ein weiterer Begriff, ähnlich wie die IT, ist die Kommunikationstechnik.
 Als Kommunikationstechnik bezeichnet man zusammenfassend Techniken für die technisch gestützte Kommunikation.
-
-:::
+```
 
 Folgendes (chaotisches) Schaubild zeigt ein wenig das Zusammenspiel von den Wissenschaften (die Ovale) und den Technikbereichen (Rechtecke) zur Informatik.
 Überschneidungen bedeuten hierbei, dass sich die Wissenschaften oder Techniken überschneiden in Bezug auf Untersuchungs- und Teilgebiete oder Technikbereiche.
@@ -86,12 +82,10 @@ da diese natürlich untereinander enge Verbindungen haben und es sich nicht imme
 ### Theoretische Informatik
 Die theoretische Informatik entstand aus der Mathematik und bildet die theoretische Grundlage aller anderen Teilgebiete.
 
-:::note Theoretische Informatik
-
+```admonish note title="Theoretische Informatik"
 Die theoretische Informatik beschäftigt sich mit der Abstraktion, Modellbildung und grundlegenden Fragestellungen, 
 die mit der Struktur, Verarbeitung, Übertragung und Wiedergabe von Informationen in Zusammenhang stehen.[^1]
-
-:::
+```
 
 Sie umfasst unter anderem folgende Untersuchungsgebiete:
 - Logik (auch in Mathematik und Philosophie)
@@ -106,11 +100,9 @@ Sie umfasst unter anderem folgende Untersuchungsgebiete:
 ### Technische Informatik
 Die technische Informatik steht eng mit der Elektrotechnik und Nachrichtentechnik in Verbindung und hat tatsächlich etwas mit Computer zu tun.
 
-:::note Technische Informatik
-
+```admonish note title="Technische Informatik"
 Die technische Informatik beschäftigt sich mit den hardwaretechnischen Grundlagen von Rechen- und Kommunikationssystemen.[^1]
-
-:::
+```
 
 Sie umfasst unter anderem folgende Untersuchungsgebiete:
 - Digitaltechnik (Logikgatter)
@@ -128,12 +120,10 @@ Sie umfasst unter anderem folgende Untersuchungsgebiete:
 Die praktische Informatik beschäftigt sich zum einen mit Programmiersprachen selbst und ihren Eigenschaften, 
 aber auch mit der Softwaretechnik (u.a. Design, Entwurf, Test und Projektmanagement).
 
-:::note Praktische Informatik
-
+```admonish note title="Praktische Informatik"
 Die praktische Informatik beschäftigt sich mit Algorithmen, Datenstrukturen, 
 Programmiersprachen, Betriebssystemen und Datenbanken sowie mit den softwareseitigen Grundlagen der Informatik.[^1]
-
-:::
+```
 
 Sie umfasst unter anderem folgende Untersuchungsgebiete:
 - Programmierung und Programmiersprachen
@@ -146,12 +136,10 @@ Sie umfasst unter anderem folgende Untersuchungsgebiete:
 Die angewandte Informatik verwendet nun viele Erkenntnisse aus den obigen Teilen und 
 wendet diese in anderen Bereichen und im Alltag an.
 
-:::note Angewandte Informatik
-
+```admonish note title="Angewandte Informatik"
 Die Angewandte Informatik wendet Kenntnisse aus der Informatik an, um Rechenanlagen, 
 Software und Verfahren für andere Wissenschaften oder Anwendungsgebiete herzustellen.[^1]
-
-:::
+```
 
 Sie umfasst unter anderem folgende Untersuchungsgebiete:
 - Künstliche Intelligenz
@@ -167,4 +155,5 @@ Sie umfasst unter anderem folgende Untersuchungsgebiete:
   - Bioinformatik
   - etc.
 
+---
 [^1]: https://de.wikipedia.org/wiki/Portal:Informatik

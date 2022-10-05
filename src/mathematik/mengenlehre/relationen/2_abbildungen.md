@@ -1,32 +1,30 @@
 # Abbildungen
-Eine der wichtigsten Relationen überhaupt stellen die *Abbildungen* da.
+Eine der wichtigsten Relationen überhaupt stellen die *Abbildungen* dar.
 Sie tauchen überall in der Mathematik auf und in der Realität lassen sich viele Probleme durch diese 
 speziellen Relationen darstellen.
 
 ## Funktionen
 Bevor wir uns den Abbildungen widmen, definieren wir die Eindeutigkeit:
 
-:::note Eindeutigkeit
-
+```admonish note title="Eindeutigkeit"
 Eine Relation $R \subseteq A \times B$ ist *eindeutig*, wenn
 $$
     \forall x \in A\ \forall y, y' \in B:\ (x,y) \in R \wedge (x,y') \in R \rightarrow y = y'
 $$
+```
 
-:::
 Anschaulich gesprochen heißt das, dass von jedem $x$, das in der Relation $R$ vorkommt, nur ein Pfeil weggeht.
 Gegeben seien $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $R = \{(1,a), (1,d), (2,b), (3,b), (4,d)\} \subseteq A \times B$.
 $R$ ist nicht eindeutig, da $(1,a)$ und $(1,d)$ vorkommen.
 Laut Definition muss aber $y=y'$ gelten, wenn $x$ in $R$ enthalten, aber es gilt $a \ne d$.
-Durch entfernen einer dieser Komponenten, z.B. $(1,d)$ wird $R$ eindeutig.
+Durch Entfernen einer dieser Komponenten, z.B. $(1,d)$ wird $R$ eindeutig.
 Im folgenden Schaubild ist links das ursprüngliche $R$ zu sehen, bei dem von der $1$ zwei Pfeile abgehen.
 Rechts ist dann die eindeutige Relation, da von der linken Seite maximal ein Pfeil pro Element abgeht.
 Bei der Eindeutigkeit ist es egal, wie viele Pfeile rechts auf ein Element zugehen, es geht nur um die linke Seite.
 
 ![Eindeutigkeit bei einer Relation dargestellt](img/eindeutige_rel.png)
 
-:::note Abbildung / Funktion
-
+```admonish note title="Abbildung / Funktion"
 $f$ ist *Abbildung* oder *Funktion* von $A$ in $B$ $:=$
 - $f$ ist Relation, also $f \subseteq A \times B$
 - $D(f) = A$, also $f$ ist Relation *__von__ $A$ in $B$*
@@ -36,8 +34,7 @@ Mathematisch-logisch aufgeschrieben:
 $$
     \forall x \in A\ \exists ! y \in B:\ (x,y) \in A \times B
 $$
-
-:::
+```
 Man schreibt dafür: $f:\ A \rightarrow B$.  
 Statt $R(x) = \{y\}$ wie bei normalen Relationen, schreibt man verkürzt $f(x) = y$, da das $y$ ja nun eindeutig ist.
 
@@ -45,11 +42,10 @@ Eine Funktion ordnet also jedem Element aus $A$ genau ein $y$ aus $B$ zu.
 
 In der Analysis und auch in anderen mathematischen Gebieten findet man häufig eine alternative textliche Einführung:
 
-:::note Alternative Definition
-
+```admonish note title="Alternative Definition"
 Eine Abbildung oder eine Funktion einer Menge $A$ in eine Menge $B$ ordnet jedem Element $x \in A$ genau ein Element $y \in B$ zu.
+```
 
-:::
 Bei dieser Definition wird komplett auf die mengentheoretische Begriffe wie *geordnetes Paar* oder auch *Relation* verzichtet.
 Erst aufbauend darauf wird dann mengentheoretisch der *Graph der Funktion* definiert als $G_f := \{(x,f(x))\ |\ x \in A \wedge f(x) \in B\} \subseteq A \times B$.
 Aus mengentheoretischer Sicht stimmen in diesen Fällen die Begriffe "Funktion" und "Graph der Funktion" überein.
@@ -65,8 +61,7 @@ Eine Abbildung $f:\ A \rightarrow B$ können dann sein:
 Wenn man eine rechnerische Vorschrift (*Abbildungsvorschrift*) angeben möchte, wie ein $y$ zu einem $x$ berechnet werden soll, 
 dann schreibt man Abbildungen so:
 
-:::note Schreibweisen
-
+```admonish note title="Schreibweisen"
 $$
     f:\ A \rightarrow B,\ x \mapsto f(x)
     \qquad\qquad\text{oder}\qquad\qquad
@@ -76,8 +71,7 @@ $$
     \end{cases}
 $$
 wobei anstelle $f(x)$ dann z.B. eine *Funktionsgleichung* tritt.
-
-:::
+```
 
 #### Beispiele
 - $f:\ \mathbb{R} \rightarrow \mathbb{R},\ x \mapsto x^2 \quad$ für eine Parabel
@@ -95,14 +89,13 @@ Jedoch ist das *Inverse* $f^{-1}$ einer Funktion $f$ im Allgemeinen keine Funkti
 
 Zwei Funktionen $f$ und $g$ sind gleich $f=g$, wenn für alle $x$ gilt $f(x) = g(x)$.
 
-:::note Injektivität, Surjektivität, Bijektivität
-
+```admonish note title="Injektivität, Surjektivität, Bijektivität"
 Sei $f: A \rightarrow B$ eine Funktion.
 - $f$ heißt *injektiv* (*eineindeutig*) $:=\ \forall x,x' \in A:\ f(x) = f(x') \rightarrow x = x'$
 - $f$ heißt *surjektiv* (*Abbildung auf $B$*) $:=\ \forall y \in B\ \exists x \in A:\ f(x) = y$
 - $f$ heißt *bijektiv* (*eineindeutige Abbildung auf $B$*) $:=\ f$ ist injektiv und surjektiv
+```
 
-:::
 *Injektivität* bedeutet, dass jedes $y$ aus der Bildmenge *höchstens einmal* abgebildet wird.
 Es würden in einem Schaubild also keine zwei oder mehr Pfeile auf ein $y \in B$ treffen.
 *Surjektivität* bedeutet, dass die Bildmenge die gesamte Menge $B$ umfasst, dass also $W(f) = B$ gilt. 
@@ -122,7 +115,7 @@ von einem Pfeil getroffen wird.
 Es darf also kein Element aus $B$ frei bleiben und es darf nur genau ein Pfeil pro Element eingehen.
 
 Dass dabei $A$ und $B$ gleich viele Elemente haben müssen ist kein Zufall.
-Welche Rolle bijektive Abbildungen bei der *Kardinalität* ("Größe") von Mengen haben, wird im Kapitel [Endlichkeit und Kardinalzahlen](../endlichkeit) erklärt.
+Welche Rolle bijektive Abbildungen bei der *Kardinalität* ("Größe") von Mengen haben, wird im Kapitel [Endlichkeit und Kardinalzahlen](../5_endlichkeit.md) erklärt.
 
 #### Beispiele
 Gegeben sei $f:\ \mathbb{N} \rightarrow \mathbb{N},\ n \mapsto f(n)$.

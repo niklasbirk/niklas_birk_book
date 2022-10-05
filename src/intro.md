@@ -3,7 +3,7 @@
 
 **Wieso erwähne ich nur die Mathematik, obwohl es doch noch zwei weitere große Themenkomplexe gibt?**
 
-Nun, das ist einfach: die beiden Weiteren sind Konsequenz aus der Mathematik.
+Nun, das ist einfach: Die beiden Weiteren sind Konsequenz aus der Mathematik.
 Die Informatik ist angewandte Mathematik und aus historischem Kontext auch ein Teilgebiet dieser.
 Erst durch das Aufkommen von Computern ist die Informatik aus ihrem theoretischen Bereich herausgekommen 
 und hat sich zu dem entwickelt, was wir heute unter Informatik verstehen.
@@ -42,8 +42,8 @@ Ich möchte ein umfangreiches Werk erschaffen, das meine Studieninhalte aufgreif
 Was meine ich damit?
 Ich kann hier nicht alles *ganz penibel* aufschreiben, was in meinen Skripten steht, auch wenn ich mich an diesen orientiere.
 Aber ich ziehe auch andere Quellen als die Skripte meiner Professoren her - Skripte anderer Professoren, Bücher, eigene Erfahrung, etc.
-Dabei versuche ich die Sachverhalte in meinen Worten wiederzugeben - zum Einen, um es selbst besser zu verstehen 
-und zum Anderen, um es euch zugänglicher zu machen.
+Dabei versuche ich die Sachverhalte in meinen Worten wiederzugeben - zum einen, um es selbst besser zu verstehen 
+und zum anderen, um es euch zugänglicher zu machen.
 
 Es geht also darum, mein Wissen hier zu konservieren und an andere weiterzugeben.
 

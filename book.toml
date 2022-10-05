@@ -13,7 +13,12 @@ edition = "2021"
 default-theme = "ayu"
 git-repository-url = "https://git.niklas-birk.de/niklas/niklas_birk_book"
 curly-quotes = true
+additional-css = ["./mdbook-admonish.css", "././mdbook-admonish.css"]
 
 [output.katex]
 [preprocessor.katex]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`
 
