@@ -1,0 +1,78 @@
+\documentclass[convert={size=512}]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{color}
+
+\definecolor{draculaPurple}{RGB}{189,147,249}
+\definecolor{draculaCyan}{RGB}{139,233,253}
+\definecolor{draculaForeground}{RGB}{248,248,248}
+\definecolor{draculaRed}{RGB}{255, 85, 85}
+
+\begin{document}
+	\begin{tikzpicture}[text=draculaForeground, draw=draculaCyan]
+		% Set names
+		\node at (0,-0.4) [thick] {A};
+		\node at (3,-0.4) [thick] {B};
+		
+		% Set elements
+		\begin{scope}[every node/.style={circle,thick,draw}]
+			\node (1) at (0,-1) {1};
+			\node (2) at (0,-2) {2};
+			\node (3) at (0,-3) {3};
+			\node (4) at (0,-4) {4};
+			\node (5) at (0,-5) {5};
+		\end{scope}
+		\begin{scope}[every node/.style={circle,thick,draw}]
+			\node (A) at (3,-1.5) {a};
+			\node (B) at (3,-2.5) {b};
+			\node (C) at (3,-3.5) {c};
+			\node (D) at (3,-4.5) {d};
+		\end{scope}
+		
+		% Arrows
+		\begin{scope}[every edge/.style={draw=draculaPurple,very thick}]
+			\path [->] (1) edge (A);
+			\path [->] (1) edge (D);
+			\path [->] (2) edge (B);
+			\path [->] (3) edge (B);
+			\path [->] (4) edge (D);
+		\end{scope}
+	
+		% Compose
+		\begin{scope}
+			\node at (4.5,-2.5) {\huge $\overset{R^{-1}}{\Longrightarrow}$};
+		\end{scope}
+	
+		% Set names
+		\node at (6,-0.4) [thick] {B};
+		\node at (9,-0.4) [thick] {A};
+		
+		% Set elements
+		\begin{scope}[every node/.style={circle,thick,draw}]
+			\node (AA) at (6,-1.5) {a};
+			\node (BB) at (6,-2.5) {b};
+			\node (CC) at (6,-3.5) {c};
+			\node (DD) at (6,-4.5) {d};
+		\end{scope}
+		\begin{scope}[every node/.style={circle,thick,draw}]
+			\node (11) at (9,-1) {1};
+			\node (22) at (9,-2) {2};
+			\node (33) at (9,-3) {3};
+			\node (44) at (9,-4) {4};
+			\node (55) at (9,-5) {5};
+		\end{scope}
+		
+		% Arrows
+		\begin{scope}[every edge/.style={draw=draculaPurple,very thick}]
+			\path [->] (AA) edge (11);
+			\path [->] (BB) edge (22);
+			\path [->] (BB) edge (33);
+			\path [->] (DD) edge (11);
+			\path [->] (DD) edge (44);
+		\end{scope}
+		
+	\end{tikzpicture}
+\end{document}

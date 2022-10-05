@@ -4,3 +4,16 @@ language = "de"
 multilingual = false
 src = "src"
 title = "Mathematik, Informatik und Programmierung"
+description = "Niklas Birk über Mathematik, Informatik und Programmierung"
+
+[rust]
+edition = "2021"
+
+[output.html]
+default-theme = "ayu"
+git-repository-url = "https://git.niklas-birk.de/niklas/niklas_birk_book"
+curly-quotes = true
+
+[output.katex]
+[preprocessor.katex]
+
