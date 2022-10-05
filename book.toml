@@ -1,0 +1,6 @@
+[book]
+authors = ["Niklas Birk"]
+language = "de"
+multilingual = false
+src = "src"
+title = "Mathematik, Informatik und Programmierung"
